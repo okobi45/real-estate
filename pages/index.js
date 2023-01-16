@@ -39,13 +39,13 @@ const Banner = ({
 
 export default function Home({ propertyForSale, propertyForRent }) {
   console.log(propertyForSale, propertyForRent);
-  
+
   return (
     <div>
       <Box>
         <Banner
           purpose={"RENT A HOME"}
-          title1="Rental Homes for"
+          title1="Rental Homes for "
           title2="Everyone"
           desc1="Explore Apartments, Villas, Homes"
           desc2="and more"
