@@ -54,7 +54,7 @@ export default function Home({ propertyForSale, propertyForRent }) {
           imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
         />
         <Flex flexWrap="wrap">
-         {/* Fetch the properties and map over them */}
+         {propertiesForRent.map((property) => <property  property={property} key={property.id} />)}
         </Flex>
         <Banner
           purpose={"BUY A HOME"}
@@ -66,6 +66,7 @@ export default function Home({ propertyForSale, propertyForRent }) {
           linkName="/search?purpose=for-sale"
           imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008"
         />
+          {propertiesForSale.map((property) => <property  property={property} key={property.id} />)}
       </Box>
     </div>
   )
