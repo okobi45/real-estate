@@ -6,7 +6,7 @@ import { BsGridFill } from 'react-icons/bs';
 import { GoVerified } from 'react-icons/goverified';
 import millify from 'millify';
 
-
+// This links directly to the listing
 const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalId } }) => (
     <Link href={`/property/${externalID}`} passHref>
         {title}
