@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Flex, Box, Text, Button } from "@chakra-ui/react";
 
+import Property from "../components/Property";
 import { baseUrl, fetchApi } from "@/utils/fetchApi";
 
 const Banner = ({
@@ -37,8 +38,8 @@ const Banner = ({
   </Flex>
 );
 
-export default function Home({ propertyForSale, propertyForRent }) {
-  console.log(propertyForSale, propertyForRent);
+export default function Home({ propertiesForSale, propertiesForRent }) {
+  
 
   return (
     <div>
@@ -78,8 +79,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      propertyForSale: propertyForSale?.hits,
-      propertyForRent: propertyForRent?.hits,
-    }
-  }
+      propertiesForSale: propertyForSale?.hits,
+      propertiesForRent: propertyForRent?.hits,
+    },
+  };
 }
