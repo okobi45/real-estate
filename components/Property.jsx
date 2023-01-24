@@ -9,7 +9,7 @@ import millify from 'millify';
 // This links directly to the listing
 const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalId } }) => (
     <Link href={`/property/${externalId}`} passHref>
-        {title}
+        {title }
     </Link>
 )
 
